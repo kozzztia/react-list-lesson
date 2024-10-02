@@ -1,0 +1,30 @@
+
+.main, .header{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--padding);
+
+}
+.header{
+    height: var(--header-height);
+    top : 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: var(--decore-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        height : 40px;
+        width: 40px;
+    }
+
+}
+.main{
+    height: var(--main-height);
+    margin-top: var(--header-height);
+    background: var(--content-background );
+    border: 1px solid var(--main-color);
+}

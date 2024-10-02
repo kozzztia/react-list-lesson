@@ -3,10 +3,30 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  --max-width : 1440px;
+  --header-height : 60px;
+  --main-height : calc(100vh - var(--header-height));
+  --body-gackground : hsl(115, 100%, 95%);
+  --content-background : #fff;
+  --decore-color : #0d00ff;
+  --main-color: hsl(0, 0%, 94%);
+  --padding: 10px;
+
+
+  @media screen and (max-width: 768px) {
+    --padding : 5px;
+  }
+
+  @media screen and (max-width: 480px) {
+    --padding : 2px;
+  }
 }
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body{
+  background-color: var(--body-gackground);
 }
