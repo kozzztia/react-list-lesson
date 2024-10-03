@@ -2,4 +2,81 @@
 .page{
     background: inherit;
     flex :3;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: end;
+    gap : 20px;
+}
+
+.dashboard{
+    height: auto;
+
+    .users{
+        display: flex;
+        flex-direction: column;
+        width :300px;
+        box-shadow: 0 2px 2px #0000007d;
+    }
+    .userList{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap : 10px;
+        list-style: none;
+        .user{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 10px;
+            white-space: nowrap;
+            cursor: pointer;
+            background: #fff;
+            border-radius: 5px;
+            border-bottom: 1px solid var(--main-color);
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        width :300px;
+        box-shadow: 0 2px 2px #0000007d;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .reviewList{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap : 10px;
+        }
+        .comment{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap :10px;
+            padding:0 10px;
+            white-space: nowrap;
+            border-bottom: 1px solid var(--main-color);
+            .user{
+                width :100px;
+                p{
+                    color :var(--link-color);
+                }
+            }
+            .info{
+                text-align: start;
+                width :100%;
+            }
+        }
+    }
 }
