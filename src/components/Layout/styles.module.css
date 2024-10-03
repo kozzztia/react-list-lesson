@@ -15,10 +15,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 10px 10px #0000007d;
 
     img{
         height : 40px;
         width: 40px;
+        filter:  invert(1);
     }
 
 }
@@ -27,4 +29,9 @@
     margin-top: var(--header-height);
     background: var(--content-background );
     border: 1px solid var(--main-color);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: start;
+    gap :10px;
 }

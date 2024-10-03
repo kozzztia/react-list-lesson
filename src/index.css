@@ -11,6 +11,7 @@
   --decore-color : #0d00ff;
   --main-color: hsl(0, 0%, 94%);
   --padding: 10px;
+  --decore-font-family : 'Caveat', cursive;
 
 
   @media screen and (max-width: 768px) {
@@ -26,6 +27,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--decore-font-family);
+  font-weight: bolder;
 }
 body{
   background-color: var(--body-gackground);
