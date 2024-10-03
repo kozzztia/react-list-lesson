@@ -2,7 +2,7 @@ import styles from "./styles.module.css"
 
 const Customers = () => {
   return (
-    <div className={styles.dashboard}>
+    <div className={styles.page}>
         Customers
     </div>
   )

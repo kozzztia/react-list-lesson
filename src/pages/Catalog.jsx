@@ -2,7 +2,7 @@ import styles from "./styles.module.css"
 
 const Catalog = () => {
   return (
-    <div className={styles.dashboard}>
+    <div className={styles.page}>
         Catalog
     </div>
   )

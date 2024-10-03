@@ -1,5 +1,5 @@
 
-.dashboard{
-    background: red;
+.page{
+    background: inherit;
     flex :3;
 }

@@ -9,9 +9,11 @@
   --body-gackground : hsl(115, 100%, 95%);
   --content-background : #fff;
   --decore-color : #0d00ff;
-  --main-color: hsl(0, 0%, 94%);
+  --main-color: hsl(0, 0%, 90%);
   --padding: 10px;
   --decore-font-family : 'Caveat', cursive;
+  --link-color : #939393;
+  --link-active-color : #2b2b2b;
 
 
   @media screen and (max-width: 768px) {
