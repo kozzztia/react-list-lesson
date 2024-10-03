@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 10px 10px #0000007d;
+    z-index: 99;
 
     img{
         height : 40px;
