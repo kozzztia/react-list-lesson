@@ -23,6 +23,7 @@
         color :var(--main-color);
         position: relative;
         transform: translate(0, -10px);
+        box-shadow: 0 0 10px #0000007d;
 
         svg{
             width : 100%;

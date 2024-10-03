@@ -1,81 +1,195 @@
-
-.page{
+.page {
     background: inherit;
-    flex :3;
+    flex: 3;
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: end;
-    gap : 20px;
+    gap: 20px;
 }
 
-.dashboard{
+.dashboard {
     height: auto;
 
-    .users{
+    .users {
         display: flex;
         flex-direction: column;
-        width :300px;
+        width: 300px;
         box-shadow: 0 2px 2px #0000007d;
+        color: var(--link-color);
     }
-    .userList{
+
+    .userList {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap : 10px;
+        gap: 10px;
         list-style: none;
-        .user{
+
+        .user {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            padding:0 10px;
+            padding: 0 10px;
             white-space: nowrap;
             cursor: pointer;
             background: #fff;
             border-radius: 5px;
             border-bottom: 1px solid var(--main-color);
-            img{
+
+            img {
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
             }
         }
     }
-    .reviews{
+
+    .reviews {
         display: flex;
         flex-direction: column;
-        width :300px;
+        width: 300px;
         box-shadow: 0 2px 2px #0000007d;
-        img{
+
+        img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
         }
-        .reviewList{
+
+        .reviewList {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap : 10px;
+            gap: 10px;
         }
-        .comment{
+
+        .comment {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            gap :10px;
-            padding:0 10px;
+            gap: 10px;
+            padding: 0 10px;
             white-space: nowrap;
+            color: var(--link-color);
             border-bottom: 1px solid var(--main-color);
-            .user{
-                width :100px;
-                p{
-                    color :var(--link-color);
+
+            .user {
+                width: 100px;
+
+                p {
+                    color: var(--link-color);
                 }
             }
-            .info{
+
+            .info {
                 text-align: start;
-                width :100%;
+                width: 100%;
+
+                span {
+                    width: 20px;
+                    color: gold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    p {
+                        margin-left: 5px;
+                        color: var(--link-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .revenue {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        width: 620px;
+        box-shadow: 0 2px 2px #0000007d;
+        figure {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        figcaption {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 2px 2px #0000007d;
+
+            h3 {
+                color: var(--link-active-color);
+                margin-left: 10px;
+            }
+
+            p {
+                color: var(--link-color);
+                margin-left: 10px;
+            }
+
+            span {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                a {
+                    color: var(--link-active-color);
+                    text-decoration: none;
+                }
+
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .orders {
+            width :100%;
+            h4 {
+                color: var(--link-active-color);
+                margin-left: 10px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: stretch;
+                gap: 10px;
+                color: var(--link-color);
+                margin-left: 10px;
+
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
             }
         }
     }
