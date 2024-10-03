@@ -36,3 +36,8 @@ h1,h2,h3,h4,h5,h6{
 body{
   background-color: var(--body-gackground);
 }
+a {
+  color: var(--link-active-color);
+  text-decoration: none;
+  margin-right: 5px;
+}
